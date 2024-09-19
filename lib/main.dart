@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spanandshade/willbeback.dart';
+import 'package:spanandshade/main_UI.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: true,
       ),
-      home: const Willbeback(),
+      home: const MainUI(),
     );
   }
 }
