@@ -23,7 +23,7 @@ class _DesignArchState extends State<DesignArch> {
               ),
             )
           ]),
-          Padding(padding: EdgeInsets.all(16)),
+          const Padding(padding: EdgeInsets.all(16)),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             Container(
               constraints: BoxConstraints(

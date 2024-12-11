@@ -9,8 +9,8 @@ class Contact extends StatefulWidget {
   State<Contact> createState() => _ContactState();
 }
 
-final String email = 'spanandshade@gmail.com';
-final String phoneNumber = '+919488536969';
+const String email = 'spanandshade@gmail.com';
+const String phoneNumber = '+919488536969';
 
 void _launchEmail() async {
   final Uri emailLaunchUri = Uri(
@@ -46,20 +46,20 @@ class _ContactState extends State<Contact> {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          Padding(padding: EdgeInsets.all(16)),
+          const Padding(padding: EdgeInsets.all(16)),
           Column(
             children: [
               GestureDetector(
                 onTap: _launchEmail,
-                child: Text(
+                child: const Text(
                   'Email us: $email',
                   style: TextStyle(color: Colors.blue),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               GestureDetector(
                 onTap: _launchPhone,
-                child: Text(
+                child: const Text(
                   'Call us: $phoneNumber',
                   style: TextStyle(color: Colors.blue),
                 ),
